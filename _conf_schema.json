@@ -1,0 +1,18 @@
+{
+  "enable_daily_send": {
+    "type": "boolean",
+    "default": false,
+    "description": "Enable or disable daily scheduled sending."
+  },
+  "daily_send_time": {
+    "type": "string",
+    "pattern": "^([01]?\\d|2[0-3]):([0-5]\\d)$",
+    "default": "08:00",
+    "description": "Time of day (HH:MM in 24h) for the daily send."
+  },
+  "daily_send_target": {
+    "type": "string",
+    "default": "#general",
+    "description": "Channel or user ID to receive the daily gold price message."
+  }
+}
